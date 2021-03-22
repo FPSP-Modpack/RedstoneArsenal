@@ -30,7 +30,7 @@ public class RedstoneArsenal extends BaseMod {
 
 	public static final String modId = "RedstoneArsenal";
 	public static final String modName = "Redstone Arsenal";
-	public static final String version = "1.7.10R1.1.3";
+	public static final String version = "@VERSION@";
 	public static final String version_max = "1.7.10R1.2.0";
 	public static final String dependencies = CoFHCore.version_group + ";after:ThermalExpansion";
 	public static final String modGuiFactory = "cofh.redstonearsenal.gui.GuiConfigRAFactory";
@@ -54,7 +54,7 @@ public class RedstoneArsenal extends BaseMod {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 
-		UpdateManager.registerUpdater(new UpdateManager(this, releaseURL, CoFHProps.DOWNLOAD_URL));
+//		UpdateManager.registerUpdater(new UpdateManager(this, releaseURL, CoFHProps.DOWNLOAD_URL));
 
 		config.setConfiguration(new Configuration(new File(CoFHProps.configDir, "/cofh/redstonearsenal/common.cfg"), true));
 		tab = new RACreativeTab();

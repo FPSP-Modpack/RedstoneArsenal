@@ -27,6 +27,8 @@ archivesBaseName = "RedstoneArsenal"
 minecraft {
     version = "1.7.10-10.13.4.1448-1.7.10"
     runDir = "eclipse/assets"
+    replace "@VERSION@", project.version
+    replaceIn "RestoneArsenal.java"
 }
 
 repositories {
