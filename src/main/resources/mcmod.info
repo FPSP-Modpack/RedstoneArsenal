@@ -1,19 +1,21 @@
-[
-    {
-        "modid": "RedstoneArsenal",
-        "name": "Redstone Arsenal",
-        "description": "Behold the Redstone (Flux) Revolution - provides Flux-Infused Tools and Armor!",
-        "version": "${version}",
-        "credits": "Team CoFH",
-        "logoFile": "assets/redstonearsenal/textures/logo.png",
-        "mcversion": "${mcversion}",
-        "url": "http://www.teamcofh.com",
-        "updateUrl": "",
-        "authorList": [ "Team CoFH" ],
-        "parent": "",
-        "screenshots": [],
-        "dependencies": [
-            "MinecraftForge,CoFHCore"
-        ]
-    }
-]
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Behold the Redstone (Flux) Revolution - provides Flux-Infused Tools and Armor!",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://www.teamcofh.com",
+		"updateUrl": "",
+		"authorList": ["Team CoFH"],
+		"credits": "Team CoFH",
+		"logoFile": "assets/redstonearsenal/textures/logo.png",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": ["CoFHCore"],
+		"dependencies": ["CoFHCore"],
+		"dependants": [],
+		"useDependencyInformation": true
+	}]
+}
